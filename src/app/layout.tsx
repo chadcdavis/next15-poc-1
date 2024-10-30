@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Bangers } from "@next/font/google";
+import { Bangers } from "next/font/google";
 import "./globals.css";
 
 const bangers = Bangers({
   weight: "400",
   variable: "--font-bangers",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
